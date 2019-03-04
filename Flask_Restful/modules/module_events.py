@@ -7,7 +7,7 @@ events_list = [
     {'id': 3, 'name_event': 'Carnivals'}
 ]
 
-class First(Resource):
+class First_event(Resource):
     
 
     
@@ -41,7 +41,7 @@ def post(self,event_id,name):
 
     
 
-class Second(Resource):
+class Second_event(Resource):
 
     def get(self, event_id):  #Get Method
         flag = False
@@ -65,4 +65,4 @@ class Second(Resource):
 
 class all_events(Resource):
     def get(self):
-return jsonify(events_list)
+        return jsonify(events_list)

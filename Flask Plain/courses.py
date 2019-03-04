@@ -85,8 +85,8 @@ def course_post(course_id, name):
     if request.method == "POST":
         return post_course(course_id, name)
     else:
-return put_course(course_id, name)
+        return put_course(course_id, name)
 
 @app.route('/v3/courses', methods=["GET"])
 def course_retrieve():
-return get_courses()
+    return get_courses()

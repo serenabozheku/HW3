@@ -7,7 +7,7 @@ courses_list = [
     {'id': 3, 'name': 'INF310'}
 ]
 
-class First(Resource):
+class First_course(Resource):
     
 
     
@@ -41,7 +41,7 @@ def post(self,course_id,name):
 
     
 
-class Second(Resource):
+class Second_course(Resource):
 
     def get(self, course_id):  
         flag = False
@@ -65,4 +65,4 @@ class Second(Resource):
 
 class all_courses(Resource):
     def get(self):
-return jsonify(courses_list)
+        return jsonify(courses_list)

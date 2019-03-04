@@ -7,7 +7,7 @@ students_list = [
     {'id': 3, 'student': 'Ilda Duke'}
 ]
 
-class First(Resource):
+class First_student(Resource):
     
 
     
@@ -41,7 +41,7 @@ def post(self,student_id,name):
 
     
 
-class Second(Resource):
+class Second_student(Resource):
 
     def get(self, student_id):  
         flag = False
@@ -63,6 +63,6 @@ class Second(Resource):
         if flag == False:
             return 'Not able to find ID!'
 
-class students(Resource):
+class all_students(Resource):
     def get(self):
         return jsonify(students_list)

@@ -94,4 +94,4 @@ def event_crud_pp(event_id, event):
 
 @app.route('/v1/events', methods=["GET"])
 def event_retrieve():
-return get_events()
+    return get_events()
